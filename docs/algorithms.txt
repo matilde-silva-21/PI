@@ -1,0 +1,54 @@
+eu quero fazer um modelo que diz bom, medio bom, medio mau, mau.
+
+nao tenho targetVariable por isso uso unsupervised learning.
+
+posso usar clustering ou association. 
+
+association talvez fosse util para perceber correlaçoes entre timestamp e velocidade/fluxo. 
+clustering podia classificar em clusters diretamente o transito bom ou mau. aprofundar tambem time series clustering
+
+escolher algoritmos dos dois e depois testar para ver a sua performance
+
+algoritmos clustering (sem time series):
+  x - Affinity Propagation - estimates the number of clusters
+    - Agglomerative Clustering - most common type of hierarchical clustering used to group objects in clusters based on their similarity
+  x - BIRCH - uses a hierarchical approach to cluster large datasets by first building a tree-like structure of subclusters and then grouping them into larger clusters
+  x - DBSCAN - given a set of points in some space, it groups together points that are closely packed together (points with many nearby neighbors), marking as outliers points that lie alone in low-density regions (whose nearest neighbors are too far away)
+    - K-Means - partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean (cluster centers or cluster centroid)
+  x - Mini-Batch K-Means
+    - Mean Shift -  This algorithm moves the centers of the clusters to the maximum density of data points, allowing it to identify clusters of arbitrary shape and size.
+    - OPTICS - Its basic idea is similar to DBSCAN, but it addresses one of DBSCAN's major weaknesses: the problem of detecting meaningful clusters in data of varying density.
+  x - Spectral Clustering -  transforms the data into a low-dimensional space and then uses K-means or another clustering algorithm to group them into clusters.
+    - Mixture of Gaussians - probabilistic models and use the soft clustering approach for distributing the points in different clusters.
+
+algoritmos de clustering (com time series):
+    - Dynamic Time Warping (DTW) - measures the similarity between two time series by finding the optimal alignment between them
+    - K-means clustering with Dynamic Time Warping (K-means+DTW) - variant of K-means that uses DTW as a distance metric to cluster time series data.
+  x - Time Series Shapelets - identifies characteristic subseries (shapelets) that can distinguish different classes
+    - Hierarchical Time Series Clustering - in agglomerative hierarchical clustering, you start out with every data point as its own cluster and then, with each step, the algorithm merges the two “closest” points until a set number of clusters, k, is reached
+  x - Time Series Classification and Clustering based on SAX (Symbolic Aggregate Approximation) - transforms the time series into a symbolic representation using discretization
+    - Time Series Motif Discovery - repeated subsequences found within a longer time series
+
+algoritmos association (sem time series):
+  x - Apriori algorithm - main goal is to create the association rule between different objects
+    - FP-Growth algorithm - alternative way to find frequent item sets without using candidate generations
+  x - Association Rule Hiding - modifies the dataset to prevent sensitive association rules from being discovered while preserving other interesting rules
+  x - Collaborative Filtering - technique that can filter out items that a user might like on the basis of reactions by similar users
+    - Sequential Pattern Mining - mining of frequently appearing series events or subsequences as patterns
+  x - Markov Models - models the probability of a sequence of events using a stochastic process and uses it to make predictions about future events
+  x - Self-Organizing Maps (SOM) - maps high-dimensional data onto a low-dimensional grid while preserving their topological properties.
+
+algoritmos association (com time series):
+  x - Time series Apriori - extends the Apriori algorithm to handle time series data by considering patterns of time series subsequences
+    - Episode Discovery - identifies frequently occurring episodes (patterns of events that occur in a specific order)
+  x - Temporal Association Rule Mining - identifies association rules that involve time intervals in addition to itemsets
+  x - Time-Delayed Association Rule Mining -  identifies association rules that involve time delays between events
+  x - Time Series Clustering - groups together similar time series based on their shape or other features
+    - Temporal Sequence Mining - identifies frequent subsequences and patterns of events that occur over time
+
+
+primeiro uma explicaçao do porque de os dados serem viaveis
+
+depois a escolha de algoritmo
+
+depois a testagem de algoritmos

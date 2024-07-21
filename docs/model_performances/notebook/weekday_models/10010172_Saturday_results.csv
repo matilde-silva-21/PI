@@ -1,0 +1,24 @@
+K-Means Algorithm - flux_and_velocity
+Silhouette score,Calinski-Harabaz Index,Davies-Bouldin Index
+0.3780813747098267,2908.804265915024,0.7827564339045908
+K-Means Algorithm - time_and_flux
+Silhouette score,Calinski-Harabaz Index,Davies-Bouldin Index
+0.45951185346583456,2706.361992110697,0.7390830131552415
+K-Means Algorithm - time_flux_and_velocity
+Silhouette score,Calinski-Harabaz Index,Davies-Bouldin Index
+0.29481311127217213,1978.6238804898776,1.0346913982026285
+TimeSeries K-Means algorithm with Dynamic Time Warping - time_and_flux
+Silhouette score,Calinski-Harabaz Index,Davies-Bouldin Index
+0.4289772865355186,1960.4168579983916,0.7480043711111108
+TimeSeries K-Means algorithm with Dynamic Time Warping - time_flux_and_velocity
+Silhouette score,Calinski-Harabaz Index,Davies-Bouldin Index
+0.3590845454621319,2401.233876162321,0.8660260314695708
+Gaussian Mixture Model - flux_and_velocity
+Silhouette score,Calinski-Harabaz Index,Davies-Bouldin Index
+-0.00467134480361062,196.38108883828008,3.9390308787021246
+Gaussian Mixture Model - time_and_flux
+Silhouette score,Calinski-Harabaz Index,Davies-Bouldin Index
+0.3902721384819952,1676.6852962434152,0.7906860599101435
+Gaussian Mixture Model - time_flux_and_velocity
+Silhouette score,Calinski-Harabaz Index,Davies-Bouldin Index
+0.02859440381913206,69.0132064630297,5.086213049593762

@@ -1,0 +1,9 @@
+K-Means Algorithm - time_and_flux
+Silhouette score,Calinski-Harabaz Index,Davies-Bouldin Index
+0.6916831105643688,308866.22490868,0.5315499183733984
+TimeSeries K-Means algorithm with Dynamic Time Warping - time_and_flux
+Silhouette score,Calinski-Harabaz Index,Davies-Bouldin Index
+0.8309532363602372,178713.17035757488,0.5073377120295471
+Gaussian Mixture Model - time_and_flux
+Silhouette score,Calinski-Harabaz Index,Davies-Bouldin Index
+0.5654946717547533,85819.73309126084,0.6181044963221002

@@ -1,0 +1,12 @@
+Desafio 1: Cálculo do estado de tráfego
+Na rede rodoviária estão distribuídos vários contadores de tráfego. Os contadores de tráfego são dispositivos usados para contar e/ou classificar os veículos que passam por um determinado local. Para além disso, por vezes, consegue-se recolher outros dados relacionados com o veículo, como por exemplo a velocidade instantânea ou até o número de eixos.
+Esses dispositivos são importantes, já que os seus dados são usados para a gestão e planeamento rodoviário de forma a melhorar o fluxo e a segurança do tráfego. Permitindo suportar decisões de gestão de evolução das infraestruturas rodoviárias por parte das equipas de planeamento.
+Para além destas equipas de planeamento, que usam os dados à posteriori, existem equipas de operação que estão em praticamente tempo real a monitorizar e a gerir o tráfego.
+Os objetivos das equipas de operação são o bom funcionamento e perfeita qualidade de serviço das condições de circulação, e minimizar constrangimentos causados por ocorrências (acidentes, obstáculos, obras, …) e antecipar situações adversas (congestionamento, meteorológicas, …) de forma a conseguirem alertar os utentes.
+Uma fonte ótima para ter uma perceção do estado do tráfego são os dados agregados a 5 minutos que os contadores lhes disponibilizam.
+O Estado de Tráfego é uma discretização do estado do fluxo de tráfego em: (Congestionado, Denso, Fluído)
+Estes dados agrupados contêm as seguintes informações:
+(idContador, numeroDeViasAssociadas, periodoAgregação, datetime, volumeContado, velocidadeMedia)
+O desafio apresentado é calcular o estado de tráfego de forma contínua com base nos dados agregados de 5 minutos recolhidos de cada um dos contadores de forma que o operador consiga ter uma perceção do estado do transito e antecipar, eventualmente, situações de congestionamento.
+Tendo em conta os inputs existentes, é pretendido que, usando técnicas de análise de dados e IA, o aluno explore técnicas e abordagens que permitam atingir o objetivo apresentado.
+Pretende-se obter, no final do desafio, um algoritmo que, baseado nos inputs dos dados agregados de cada contador, calcule o estado de tráfego nesse local
